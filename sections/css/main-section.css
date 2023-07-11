@@ -1,0 +1,119 @@
+body{
+background: #f9f4f5;
+
+
+
+}
+main{
+  position: relative;
+  top: 50px;
+  
+}
+
+
+
+
+.main__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+}
+
+.section{
+  margin: 5px 6% 0;
+  position: relative;
+  top: 30px;
+
+}
+
+
+.section__gallery{
+ 
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+.gallery{
+ 
+  max-width: 1130px;
+  
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: start;
+  gap: 20px;
+    
+  
+}
+
+
+
+
+.card{
+  padding: 7px 0;
+  width: 210px;
+  height: 250px;
+
+  
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  
+
+}
+.card__img{
+  border-radius: 2px 2px 0 0 ;
+  
+  box-shadow: 0.1px 0.1px 6px 0.1px #C5C5C5;
+}
+
+.card__description{
+  height: 40px;
+  width: 100%;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  border-radius: 0 0 2px 2px ;
+  box-shadow: 0.1px 0.1px 6px 0.1px #C5C5C5;
+}
+
+
+.wsp__icon {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+
+
+
+
+@media (max-width: 768){
+  
+}
+
+@media (max-width: 1024){
+
+}
