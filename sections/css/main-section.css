@@ -6,7 +6,7 @@ background: #f9f4f5;
 }
 main{
   position: relative;
-  top: 50px;
+  top: 20px;
   
 }
 
@@ -31,7 +31,6 @@ main{
 
 
 .section__gallery{
- 
   
   display: flex;
   flex-direction: column;
@@ -54,7 +53,6 @@ main{
     
   
 }
-
 
 
 
