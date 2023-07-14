@@ -10,99 +10,109 @@
   border-radius: 20px;
 }
 
+
+
+
+
+
+
 body {
   font-family: "Urbanist", sans-serif;
 }
 
-
-.div__btn{
+.div__btn {
   display: none;
-  
 }
-.logo{
+.logo {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   width: 100%;
   background-color: #c8a2ff;
 }
-.logo img{
+.logo img {
   height: 100px;
 }
 
-.abajo{
+.abajo {
   position: fixed;
   top: 0;
-  
 }
-.container__nav{
+.container__nav {
   position: fixed;
   padding-right: 40px;
   display: flex;
   justify-content: center;
- width: 100vw;
- background: #3a1050;
+  width: 100vw;
+  background: #3a1050;
+  
+  
 
-
- z-index: 1000;
+  z-index: 1000;
 }
 
-.nav ul, .nav li {
-	margin: 0;
-	padding: 0;
+.nav ul,
+.nav li {
+  margin: 0;
+  padding: 0;
 }
 .nav ul {
-	background: #3a1050;
-	list-style: none;
-	width: 100%;
+  background: #3a1050;
+  list-style: none;
+  width: 100%;
 }
 .nav li {
-	float: left;
-	position: relative;
-	width:auto;
+  float: left;
+  position: relative;
+  width: auto;
 }
 .nav a {
-	
-	color: #FFFFFF;
-	display: block;
-	font: 20px 'Urbanist';
-	padding: 15px 20px;
-	text-align: center;
-	text-decoration: none;
-	-webkit-transition: all .25s ease;
-	-moz-transition: all .25s ease;
-	-ms-transition: all .25s ease;
-	-o-transition: all .25s ease;
-	transition: all .25s ease;
+  color: #ffffff;
+  display: block;
+  font: 20px "Urbanist";
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 .nav li:hover a {
-	background: #c8a2ff;
+  background: #c8a2ff;
 }
 .submenu {
-	left: 0;
-	opacity: 0;
-	position: absolute;
-	top: 5px;
-	visibility: hidden;
-	z-index: 1;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 5px;
+  visibility: hidden;
+  z-index: 1;
 }
+
+.desplegable::after {
+  content: " \25BC";
+  font-size: 11px;
+}
+
 li:hover ul.submenu {
-	opacity: 1;
-	top: 54px;
-	visibility: visible;
-}
+  opacity: 1;
+  top: 54px;
+  visibility: visible;
+} 
 .submenu li {
-	float: none;
-	width: 100%;
+  float: none;
+  width: 100%;
 }
 .submenu li a:hover {
-	background: #3a1050;
+  background: #3a1050;
 }
 .submenu a {
-	background-color:#3a1050;
+  background-color: #3a1050;
   padding: 10px 0px;
 }
 
-#current{
+#current {
   background: #c8a2ff;
 }
 
@@ -113,107 +123,121 @@ li:hover ul.submenu {
 
 
 
-@media (max-width: 768px) {
 
-  .header{
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .header {
     width: 100vw;
     position: fixed;
     z-index: 1000;
-    
   }
-  #btn-menu{
+  #btn-menu {
     display: none;
   }
 
-  .div__btn{
+  .div__btn {
     display: block;
     position: absolute;
     top: 10px;
     left: 10px;
 
     z-index: 5000;
-    
-  }
-  
-    .div__btn label{
-      
-      font-size: 20px;
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      padding: 10px;
-      color: #fff;
-      background-color: #3a1050;
-      border-radius: 5px;
-    }
-  
-
-  .div__btn label:hover{
-    cursor: pointer;
-    background-color: #8424b1;
-    opacity: 0.8;
-   
   }
 
-  
+  .div__btn label {
+    font-size: 20px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    color: #fff;
+    background-color: #20092d;
+    border-radius: 5px;
+  }
 
 
-  .logo{
+  .logo {
     position: fixed;
     top: 0;
     z-index: 100;
   }
-  .logo img{
+  .logo img {
     height: 60px;
   }
 
-  .container__nav{
-    justify-content:flex-start ;
+  .container__nav {
+    justify-content: flex-start;
     position: fixed;
-    
     height: 100vh;
     background: #3a1050;
-    width: 45%;
-    
-    
+    width: 200px;
+    display: none;
+
     z-index: 1000;
-    padding: 50px 0 0 0;
-    
-    
-    
+    padding: 58px 0 0 0;
+
+   
   }
 
- 
 
-  .nav ul{
+
+  .nav ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    
   }
-
-  .nav li{
-    border-top: 2px solid #20092d;
-   
-
+  ul .submenu {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
   }
-  .nav a{
+  
+  
+  .nav li {
+    border-top: 0.5px solid #20092d;
+  }
+  
+
+  
+  .nav a {
     text-align: left;
   }
 
 
- 
-  
 
+#current{
+  background: none;
+}
+  .submenu{
+    padding-top: 0px;
+    position: relative;
+    display: block;
+    top: 0;
+  }
+  .submenu li{
+    position: relative;
+    top: 0;
+    
+  }
 
- .submenu a{
+ .submenu li a{
   padding-left: 30px;
  }
 
-
-
-
- 
-
   
-}
 
+}
